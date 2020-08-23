@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('created', model_utils.fields.AutoCreatedField(default=django.utils.timezone.now, editable=False, verbose_name='created')),
                 ('modified', model_utils.fields.AutoLastModifiedField(default=django.utils.timezone.now, editable=False, verbose_name='modified')),
                 ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('metadata', django.contrib.postgres.fields.jsonb.JSONField(default=mvp_texting_app.persons.models.person_json_default_value)),
+                ('metadata', django.contrib.postgres.fields.jsonb.JSONField(default=mvp_texting_app.persons.models.person_model_metadata_json_default_value)),
             ],
             options={
                 'abstract': False,
